@@ -1,0 +1,41 @@
+p {
+	background-color: #E6E6E6;
+}
+
+ul {
+	display: inline;
+	list-style-type: none;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+ul,p {
+	padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+label {
+	display: block;
+	width: 200px;
+	float: left;
+}
+
+button{
+	margin: 2px;
+}
+
+.buttons{
+    margin:0 auto;
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+}
