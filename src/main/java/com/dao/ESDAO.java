@@ -9,10 +9,12 @@ import java.util.Map;
 
 import model.TaskBean;
 
+import org.elasticsearch.action.delete.DeleteResponse;
 import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.action.search.SearchType;
+import org.elasticsearch.action.update.UpdateResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.node.Node;
@@ -64,12 +66,12 @@ public class ESDAO {
 		task.put("task", newTask.getTask());
 		task.put("dateTime", newTask.getDateTime());
 
-		IndexResponse irb =  client.prepareIndex("todo", "tasks").setSource(task).execute().actionGet();
+		IndexResponse ir =  client.prepareIndex("todo", "tasks").setSource(task).execute().actionGet();
 		
 		
-		GetResponse response = client.prepareGet("todo", "tasks", irb.getId()).execute().actionGet();
+		GetResponse response = client.prepareGet("todo", "tasks", ir.getId()).execute().actionGet();
 		
-		response.getSource().put("taskID", irb.getId());
+		response.getSource().put("taskID", ir.getId());
 		
 		System.out.println(JSONUtil.toJson(response.getSource()));
 		
@@ -77,6 +79,29 @@ public class ESDAO {
 		
 		
 
+	}
+
+	public static String updateTask(TaskBean taskObj) {
+		Map<String,Object> task = new HashMap<String,Object>();
+		task.put("task", taskObj.getTask());
+		task.put("dateTime", taskObj.getDateTime());
+		
+		UpdateResponse ur = client.prepareUpdate("todo", "tasks", taskObj.getTaskID())
+		.setDoc(task)
+		.execute()
+		.actionGet();
+		
+		GetResponse response = client.prepareGet("todo", "tasks", ur.getId()).execute().actionGet();
+
+		System.out.println(JSONUtil.toJson(response.getSource()));
+		
+		return JSONUtil.toJson(response.getSource());
+	}
+
+	public static String deleteTask(String taskID) {
+		DeleteResponse dr = client.prepareDelete("todo", "tasks", taskID).execute().actionGet();
+		
+		return dr.getId();
 	}
 
 }
