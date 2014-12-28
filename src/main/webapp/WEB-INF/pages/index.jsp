@@ -15,15 +15,16 @@
 	
 </head>
 <body>
-<h1>To Do List</h1>
+<h2 style="text-align:center">To Do List</h2>
 <ul id="tasks">
 </ul>
 <hr/>
-
+<div class='newTask' >
+<h4> Add new task</h4>
 <label>Enter the task : </label> <input type="text" id="task"> <br/>
-<label>Enter the date and time : </label> 	<input type="text" value="" id="datetimepicker"/> <br/>
-<div class="buttons"><button id="save">Save</button><button id="cancel">Cancel</button></div>
-
+<label>Enter the date and time : </label> 	<input type="text" id="datetimepicker1"/> <br/>
+<div class="buttons"><button id="save">Save</button></div>
+</div>
 
 
 
@@ -33,12 +34,12 @@
 
 
 <script>
-$('#datetimepicker').datetimepicker({
-dayOfWeekStart : 1,
+$('#datetimepicker1').datetimepicker({
+dayOfWeekStart : 0,
 lang:'en',
 startDate:	moment(moment()).format('YYYY/MM/DD')
 });
-$('#datetimepicker').datetimepicker({value: moment(moment()).format('YYYY/MM/DD HH:mm'),step:10});
+$('#datetimepicker1').datetimepicker({value: moment(moment()).format('YYYY/MM/DD HH:mm'),step:10});
 </script>
 
 </body>

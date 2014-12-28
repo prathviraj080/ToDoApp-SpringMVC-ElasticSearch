@@ -7,10 +7,10 @@ $(function() {
 		dataType : 'json',
 		success: function(tasks) {
 			$.each(tasks, function(i,task){
-				$('#tasks').append('<li taskID='+ task.taskID +'><p>Task: ' + 
+				$('#tasks').append('<li taskID='+ task.taskID +'><p>' + 
 						'<span class="noEdit task"> '+ task.task + '</span>' + 
 						'<input class="edit task"/>' +
-						'----------> When to do: ' + 
+						'<span class="at"> at </span>' + 
 						'<span class="noEdit dateTime"> '+ task.dateTime + '</span> ' +
 						'<input class="edit dateTime" id="datetimepicker"/></p>' +
 						'<button class="remove"> X </button>' +
@@ -28,16 +28,15 @@ $(function() {
 	});
 	
 	$('#save').on('click', function() {
-		
 		$.ajax({
 			type: 'POST',
 			url: '/ToDoApp-SpringMVC-ElasticSearch/SaveTasks',
-			data: {"task" : $('#task').val(), "dateTime" : $('#datetimepicker').val()},
+			data: {"task" : $('#task').val(), "dateTime" : $('#datetimepicker1').val()},
 			success: function(newTodo) {
-				$('#tasks').append('<li taskID='+ newTodo.taskID +' ><p>Task: ' + 
+				$('#tasks').append('<li taskID='+ newTodo.taskID +' ><p> ' + 
 						'<span class="noEdit task"> '+ newTodo.task + '</span>' + 
 						'<input class="edit task"/>' +
-						'----------> When to do: ' + 
+						'<span class="at"> at </span>' + 
 						'<span class="noEdit dateTime"> '+ newTodo.dateTime + '</span> ' +
 						'<input class="edit dateTime" id="datetimepicker"/></p>' +
 						'<button class="remove"> X </button>' +
@@ -59,7 +58,6 @@ $(function() {
 			url: '/ToDoApp-SpringMVC-ElasticSearch/DeleteTask',
 			data: {"taskID" : taskID},
 			success: function(deletedTaskID) {
-				console.log("deleted " + deletedTaskID);
 				$li.remove();
 			},
 			error: function(deletedTaskID){
@@ -74,7 +72,7 @@ $(function() {
 		$li.find('input.task').val($li.find('span.task').html());
 		
 		$('#datetimepicker').datetimepicker({
-			dayOfWeekStart : 1,
+			dayOfWeekStart : 0,
 			lang:'en',
 			startDate:	$li.find('span.dateTime').html()
 		});
@@ -93,7 +91,6 @@ $(function() {
 		var $task = $li.find('input.task').val();
 		var $dateTime = $li.find('input.dateTime').val();
 		var $taskID = $li.attr('taskID');
-		console.log($taskID);
 		$.ajax({
 			url: '/ToDoApp-SpringMVC-ElasticSearch/UpdateTask',
 			data: {"taskID" : $taskID, "task" : $task, "dateTime" : $dateTime},

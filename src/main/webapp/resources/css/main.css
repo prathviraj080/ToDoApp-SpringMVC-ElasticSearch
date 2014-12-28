@@ -1,7 +1,13 @@
+
 li {
 	background-color: #E6E6E6;
     margin-bottom: 5px;
+   	padding: 2px;
 	
+}
+
+p {
+	margin: 1px;
 }
 
 ul {
@@ -43,7 +49,35 @@ button{
 
 .buttons{
     margin:0 auto;
-    width: 300px;
+    width: 100%;
     display: inline-block;
     text-align: center;
+}
+
+.task, .dateTime, .at{
+	color: #060606;
+	font-size: 150%;
+}
+
+.task, .dateTime {
+	text-shadow: 1px 1px #0B615E;
+}
+
+.newTask h4 {
+	margin: 10px;
+	text-align: center;
+	
+}
+
+.newTask {
+	background-color: #E6E6E6;
+    margin:0 auto;
+   	padding: 2px;
+   	display:block;
+	overflow:auto;
+	width: 380px;
+}
+
+.at{
+	font-style: italic;
 }
