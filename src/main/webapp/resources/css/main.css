@@ -1,10 +1,24 @@
-p {
+li {
 	background-color: #E6E6E6;
+    margin-bottom: 5px;
+	
 }
 
 ul {
 	display: inline;
 	list-style-type: none;
+}
+
+ul li .edit {
+	display: none;
+}
+
+ul li.edit .edit{
+	display: initial;
+}
+
+ul li.edit .noEdit{
+	display: none;
 }
 
 hr { 
@@ -15,12 +29,6 @@ hr {
     margin-right: auto;
     border-style: inset;
     border-width: 1px;
-}
-
-ul,p {
-	padding: 0;
-    margin: 0;
-    margin-bottom: 5px;
 }
 
 label {

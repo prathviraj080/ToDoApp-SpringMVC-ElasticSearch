@@ -66,7 +66,7 @@ public class WelcomeController {
 		return ESDAO.saveTask(taskObj);
 	}
 	
-	@RequestMapping(value="/UpdateTask", method = RequestMethod.POST)
+	@RequestMapping(value="/UpdateTask")
 	public ResponseEntity<String> updateTasksResponse(@RequestParam(value = "taskID", required = true) String taskID,
 													@RequestParam(value = "task", required = true) String task,
 													@RequestParam(value = "dateTime", required = true) String dateTime
