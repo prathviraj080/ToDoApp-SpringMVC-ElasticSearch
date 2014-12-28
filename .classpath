@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/test/resources"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.2/b316e9737eea25e9ddd6d88eaeee76878045c6b2/logback-classic-1.1.2.jar" sourcepath="/home/prathvi/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.2/decd76e2c461157804473468bbdc6b8eb6d6121b/logback-classic-1.1.2-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.0.6.RELEASE/9020a09a96058133c822ff04f00e7fa0e0c3b82b/spring-webmvc-4.0.6.RELEASE.jar" sourcepath="/home/prathvi/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.0.6.RELEASE/8ed4a4be827c7ae796e8f855abf6190a596bb931/spring-webmvc-4.0.6.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/.gradle/caches/modules-2/files-2.1/jstl/jstl/1.2/74aca283cd4f4b4f3e425f5820cda58f44409547/jstl-1.2.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/5959582d97d8b61f4d154ca9e495aafd16726e34/servlet-api-2.5.jar" sourcepath="/home/prathvi/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/21599814ad9a605b86f3e6381571beccd861a32/servlet-api-2.5-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.2/2d23694879c2c12f125dac5076bdfd5d771cc4cb/logback-core-1.1.2.jar" sourcepath="/home/prathvi/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.2/502e1c764542fe747896c1dc04f023acfe0e5cbc/logback-core-1.1.2-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.6/562424e36df3d2327e8e9301a76027fca17d54ea/slf4j-api-1.7.6.jar" sourcepath="/home/prathvi/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.6/97bb93c1badeae97a3d37e3c902df2985ee3de34/slf4j-api-1.7.6-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.0.6.RELEASE/587879b58acebeb5b0a63c01e822f9b44d9a4c77/spring-beans-4.0.6.RELEASE.jar" sourcepath="/home/prathvi/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.0.6.RELEASE/5e37af2dc3a230912dbb06b45cc2c1d53c2c9abb/spring-beans-4.0.6.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.0.6.RELEASE/3bb3a52edabf9ffe73aa534fb085c816bac28b4d/spring-context-4.0.6.RELEASE.jar" sourcepath="/home/prathvi/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.0.6.RELEASE/778949f894ac1ee2d42a8f074a7477540f4d04a/spring-context-4.0.6.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.0.6.RELEASE/d880beac77d42c5798aa2b632ddd0e4ae47c79ad/spring-core-4.0.6.RELEASE.jar" sourcepath="/home/prathvi/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.0.6.RELEASE/5b16ad4018f9012ce3917e2e1038d19d2da57285/spring-core-4.0.6.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.0.6.RELEASE/5f0a135b8cf290aa244097dc6264ad0989d25c56/spring-expression-4.0.6.RELEASE.jar" sourcepath="/home/prathvi/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.0.6.RELEASE/b86718cc9e7b5f53be187e8e35b44ad2dfd0196b/spring-expression-4.0.6.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.0.6.RELEASE/85ef4b91fcdd86d81e4a9b3e5f006dcb4128e6d/spring-web-4.0.6.RELEASE.jar" sourcepath="/home/prathvi/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.0.6.RELEASE/ea420724d884a43e3db4b08d2ca5ff75715ff9bb/spring-web-4.0.6.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.0.6.RELEASE/e377760b7692569535573ba9f6e80b4b74869369/spring-aop-4.0.6.RELEASE.jar" sourcepath="/home/prathvi/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.0.6.RELEASE/d21d57199535402a4afdb4e9406d6f5276a5b205/spring-aop-4.0.6.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar" sourcepath="/home/prathvi/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/28bb0405fddaf04f15058fbfbe01fe2780d7d3b6/commons-logging-1.1.3-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" sourcepath="/home/prathvi/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/4a4b6d692e17846a9f3da036438a7ac491d3c814/aopalliance-1.0-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/Downloads/java-json.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/jars/elasticsearch-1.4.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/jars/lucene-4.10.2/analysis/common/lucene-analyzers-common-4.10.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/jars/lucene-4.10.2/sandbox/lucene-sandbox-4.10.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/jars/lucene-4.10.2/highlighter/lucene-highlighter-4.10.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/jars/lucene-4.10.2/classification/lucene-classification-4.10.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/jars/lucene-4.10.2/facet/lucene-facet-4.10.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/jars/lucene-4.10.2/spatial/lucene-spatial-4.10.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/jars/lucene-4.10.2/suggest/lucene-suggest-4.10.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/workspace/CrowdChatPlatform/WebContent/WEB-INF/lib/antlr-runtime-3.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/workspace/CrowdChatPlatform/WebContent/WEB-INF/lib/commons-lang-2.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/jars/lucene-4.10.2/benchmark/lucene-benchmark-4.10.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/jars/lucene-4.10.2/codecs/lucene-codecs-4.10.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/jars/lucene-4.10.2/core/lucene-core-4.10.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/jars/lucene-4.10.2/expressions/lucene-expressions-4.10.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/jars/lucene-4.10.2/grouping/lucene-grouping-4.10.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/jars/lucene-join-4.3.0-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/jars/lucene-4.10.2/memory/lucene-memory-4.10.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/jars/lucene-4.10.2/misc/lucene-misc-4.10.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/jars/lucene-4.10.2/queries/lucene-queries-4.10.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/jars/lucene-4.10.2/replicator/lucene-replicator-4.10.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/jars/lucene-4.10.2/test-framework/lucene-test-framework-4.10.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/workspace/CrowdChatPlatform/WebContent/WEB-INF/lib/log4j-1.2.17.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/jars/lucene-4.10.2/join/lucene-join-4.10.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/workspace/CrowdChatPlatform/WebContent/WEB-INF/lib/gson-2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/prathvi/jars/lucene-4.10.2/queryparser/lucene-queryparser-4.10.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
