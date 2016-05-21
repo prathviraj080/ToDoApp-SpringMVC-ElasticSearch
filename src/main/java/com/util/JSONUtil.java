@@ -49,3 +49,4 @@ public class JSONUtil {
 		return GSON.fromJson(br, type);
 	} 
 }
+/* EOF */
